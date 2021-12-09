@@ -14,7 +14,7 @@
 /////////////////// LOGO TOP ///////////////////
 
 .logo-top {
-  min-height: 600px;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
@@ -305,38 +305,45 @@
     flex-direction: column;
 
     .duvidas-single {
-      padding: .5rem 3rem;
+      max-width: 700px;
+      width: 100%;
     
-      background: var(--green-500);
-      bottom: 2px solid var(--green-500);
-      border-radius: 1rem;
+      border: 2px solid var(--green-500);
       -webkit-box-shadow: 0px 5px 28px -5px rgba(0,0,0,0.1); 
       box-shadow: 0px 5px 28px -5px rgba(0,0,0,0.1);
+      border-radius: 1rem;
 
       & + div {
         margin-top: 1rem;
       }
 
       dt {
-        justify-content: space-between;
+        width: calc(100% + 2px);
+        position: relative;
+        left: -1px;
 
+        background: var(--green-500);
         text-align: center;
         font-size: 2rem;
         font-weight: bold;
         font-family: var(--first-type);
         cursor: pointer;
+        border-radius: 1rem;
       }
 
       dd {
+        max-width: 500px;
+
+        margin: 0 auto;
         display: none;
-        padding-bottom: 1rem;
+        padding: 1rem 2px;
 
         background: black;
         color: white;
 
         &.ativo {
           display: block;
-          animation: slideDown 1s forwards;
+          animation: slideDown 2s forwards;
         }
       }
     }

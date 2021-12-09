@@ -100,7 +100,7 @@ a {
 }
 
 .logo-top img {
-  width: 500px;
+  width: 650px;
 }
 
 .chamada-1 {
@@ -309,6 +309,46 @@ a {
   color: white;
 }
 
+.garantia {
+  padding: 6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.garantia h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.garantia p {
+  color: white;
+  font-size: 1rem;
+}
+
+.chamada-2 {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.chamada-2 h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.chamada-2 h1 span {
+  font-size: 5rem;
+}
+
+.chamada-2 > span {
+  display: block;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
 .button {
   display: inline-block;
   padding: .5rem 4rem;
@@ -325,6 +365,25 @@ a {
 }
 
 .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.button-2 {
+  display: inline-block;
+  padding: .5rem 6rem;
+  background: var(--green-500);
+  border-radius: 10px;
+  color: BLACK;
+  font-weight: bold;
+  font-size: 3rem;
+  -webkit-box-shadow: var(--boxshadow-green);
+          box-shadow: var(--boxshadow-green);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button-2:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

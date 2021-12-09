@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: .5rem 4rem;
+
+  background: var(--green-500);
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: var(--boxshadow-green);
+  letter-spacing: .5rem;
+
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

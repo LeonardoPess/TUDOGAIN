@@ -1,0 +1,235 @@
+.background-general {
+  background-image: url('../../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-general {
+  max-width: 1280px;
+
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/////////////////// LOGO TOP ///////////////////
+
+.logo-top {
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 500px;
+  }
+}
+
+/////////////////// CHAMADA 1 ///////////////////
+
+.chamada-1 {
+  max-width: 800px;
+
+  margin: 0 auto;
+  padding: 6rem 0;
+
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: normal;
+
+    span {
+      color: var(--green-500);
+      font-weight: bold;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+
+    font-size: 2rem;
+    color: white;
+  }
+
+  .button {
+    margin-top: 2rem;
+  }
+}
+
+/////////////////// VANTAGENS 1 ///////////////////
+
+.vantagens-1 {
+  padding: 6rem 0;
+
+  text-align: center;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .vantagens-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    border: 8px solid var(--green-500);
+    border-radius: 30px;
+
+    .vantagem-single {
+      width: 33%;
+
+      padding: 2rem;
+
+      &:first-child {
+        border-right: 6px solid var(--green-500);
+      }
+
+      &:last-child {
+        border-left: 6px solid var(--green-500);
+      }
+
+      img {
+        height: 100px;
+      }
+
+      span {
+        display: block;
+
+        color: var(--green-500);
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/////////////////// RESULTADO 1 ///////////////////
+
+.resultado-1 {
+  padding: 6rem 0;
+  
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .video-wrapper {
+    width:80%;
+
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+    border: 8px solid var(--green-500);
+
+    &::after {
+      padding-top: 56.25%;
+      display: block;
+      content: '';
+  }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width:90%;
+    }
+  }
+}
+
+/////////////////// DEPOIMENTOS ///////////////////
+
+.depoimentos {
+  padding: 6rem 0;
+
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .depoimentos-wrapper  {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .depoimentos-single {
+      max-width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      & + div {
+        margin-left: 1rem;
+      }
+
+      .round-image {
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      span {
+        font-size: 2rem;
+        color: var(--green-500);
+      }
+
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+/////////////////// SOBRE ///////////////////
+
+.sobre {
+  padding: 6rem 0;
+
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .round-image {
+    width: 100px;
+    height: 100px;
+
+    margin: 2rem auto 0;
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  span {
+    font-size: 2rem;
+    color: var(--green-500);
+  }
+
+  p {
+    max-width: 500px;
+    
+    margin: 1rem auto 0;
+
+    color: white;
+  }
+}

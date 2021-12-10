@@ -469,15 +469,31 @@ footer {
   text-align: center;
 }
 
-footer a {
+footer .footer-infos-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+footer .footer-infos-wrapper a {
   font-size: 2rem;
 }
 
-footer div {
-  margin-top: 1rem;
+footer .footer-infos-wrapper .contact {
+  border-left: 3px solid black;
+  padding-left: 4rem;
 }
 
-footer div p {
+footer .footer-infos-wrapper .contact span {
+  font-size: 1.5rem;
+}
+
+footer .text {
+  margin-top: 2rem;
+}
+
+footer .text p {
   font-size: 1.5rem;
 }
 

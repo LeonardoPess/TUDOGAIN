@@ -379,7 +379,7 @@
   }
 }
 
-/////////////////// REDES BOTTOM ///////////////////
+/////////////////// FOOTER ///////////////////
 
 footer {
   width: 100%;
@@ -394,12 +394,26 @@ footer {
   font-weight: bold;
   text-align: center;
 
-  a {
-    font-size: 2rem;
+  .footer-infos-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    a {
+      font-size: 2rem;
+    }
+
+    .contact {
+      border-left: 3px solid black;
+      padding-left: 4rem;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
   }
 
-  div{
-    margin-top: 1rem;
+  .text {
+    margin-top: 2rem;
 
     p {
       font-size: 1.5rem;

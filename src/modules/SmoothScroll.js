@@ -19,7 +19,7 @@ export default class SmoothScroll {
 
   scrollToSection(e) {
     e.preventDefault();
-    const to = this.getScrollTopByHref(e.currentTarget) - 80;
+    const to = this.getScrollTopByHref(e.currentTarget) - 20;
     this.scrollToPosition(to);
   }
 

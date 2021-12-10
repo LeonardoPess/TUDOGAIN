@@ -84,6 +84,21 @@ a {
   max-width: 1280px;
   padding: 0 1rem;
   margin: 0 auto;
+  position: relative;
+}
+
+.redes-top {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.redes-top a + a {
+  margin-left: 1rem;
+}
+
+.redes-top a img {
+  height: 40px;
 }
 
 .logo-top {
@@ -310,6 +325,11 @@ a {
   overflow: hidden;
 }
 
+.depoimentos .depoimentos-wrapper .depoimentos-single > img {
+  max-width: 150px;
+  margin: .5rem 0;
+}
+
 .depoimentos .depoimentos-wrapper .depoimentos-single span {
   font-size: 2rem;
   color: var(--green-500);
@@ -528,12 +548,12 @@ a {
   margin-top: 3rem;
 }
 
-.redes-bottom div img {
-  max-height: 50px;
+.redes-bottom div a + a {
+  margin-left: 1rem;
 }
 
-.redes-bottom div img + img {
-  margin-left: 1rem;
+.redes-bottom div a img {
+  max-height: 50px;
 }
 
 footer {
